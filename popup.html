@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="button.css">
+    
+    <style>
+      button {
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 4px double #000000;
+        color: #e06bc3;
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: #19eece;
+      }
+      button:hover span {
+        padding-right: 25px;
+      }
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+    </style>
   </head>
-  <body>
-    <button id="changeColor"></button>
+  <body style="min-width: 400px;
+  max-width: 100%;
+  position: relative;
+  vertical-align:middle;">
+    <button id="addMock"; > Add Mock Assignment </button>
+  
     <script src="popup.js"> </script>
   </body>
 </html>

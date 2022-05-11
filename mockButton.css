@@ -1,0 +1,35 @@
+
+button{
+background:    #15d798;
+border-radius: 11px;
+padding:       15px 35px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 26px/1 "Open Sans", sans-serif;
+text-align:    center;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  button:hover {
+    background-color: #f7c2f9;
+  }
+  button:hover span {
+    padding-right: 25px;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
