@@ -17,6 +17,12 @@
             "128": "/images/Aeries500.png"
         } 
     },
+    "content_scripts": [
+        {
+          "matches": ["https://aeries.carmelunified.org/parent/GradebookDetails.aspx"],
+          "js": ["content-script.js"]
+        }
+      ],
     "icons": {
         "16": "/images/Aeries16.png",
         "32": "/images/Aeries32.png",
